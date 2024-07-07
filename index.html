@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestiario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bestiario</h1>
+        
+    </header>
+    <section id="monstros">
+        <div class="row">
+            <h2>Monstros</h2>
+            <div class="column">
+                <img src="img/bola5.gif" alt=""onclick="openModal();slideMonster(1)">
+            </div>
+            <div class="column">
+                <img src="img/Giftangrep.png" alt=""onclick="openModal();slideMonster(2)" class="morto">
+            </div>
+            <div class="column">
+                <img src="img/Kanniballer morke.png" alt=""onclick="openModal();slideMonster(3)">
+            </div>
+            <div class="column">
+                <img src="img/Mus.png" alt=""onclick="openModal();slideMonster(4)">
+            </div>
+            <div class="column">
+                <img src="img/påkaller.png" alt=""onclick="openModal();slideMonster(5)">
+            </div>
+            <div class="column">
+                <img src="img/Papa.png" alt=""onclick="openModal();slideMonster(6)" class="morto">
+            </div>
+            <div class="column">
+                <img src="img/Hulda.png" alt=""onclick="openModal();slideMonster(7)" class="morto">
+            </div>
+        </div>
+    </section>
+    
+    <section id="npcs">
+        <div class="row">
+            <h2>NPC</h2>
+            <div class="column">
+                <img src="img/Bjarte Aune - Capitão do navio.png" alt=""onclick="openModal(1);currentSlide(1)" class="morto">
+            </div>
+            <div class="column">
+                <img src="img/Manantra.png" alt=""onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="column">
+                <img src="img/Morpheu.png" alt=""onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="column">
+                <img src="img/Criança cegueta.png" alt=""onclick="openModal();currentSlide(8)">
+            </div>
+            <div class="column">
+                <img src="img/Irmãos.png" alt=""onclick="openModal();currentSlide(4)" class="morto">
+            </div>
+            <div class="column">
+                <img src="img/Christopher.png" alt=""onclick="openModal();currentSlide(5)" class="morto">
+            </div>
+            <div class="column">
+                <img src="img/Soldados cemiterio.png" alt=""onclick="openModal();currentSlide(6)" >
+            </div>
+            <div class="column">
+                <img src="img/Jeane.png" alt=""onclick="openModal();currentSlide(7)" class="morto">
+            </div>
+        </div>
+    </section>
+    <!--<section id="jogadores">
+        <div class="row">
+            <h2>Jogadores da sessão</h2>
+            <div class="column">
+                <img src="img/Darc - Personagem da mary novo design vestido.png">
+            </div>
+            <div class="column">
+                <img src="img/MLK - personagem do vaz sem a pele.png" >
+            </div>
+            <div class="column">
+                <img src="img/Ryan.png">
+            </div>
+            <div class="column">
+                <img src="img/Thomas Sigurd - personagem do manoel.png">
+            </div>
+        </div>
+    </section>-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlidesnpc">
+                <img src="" alt="" id="imgnpc">
+                <div id="base">
+                    <h2>Status</h2>
+                    <p class="nome"></p>
+                    <!--Vida--><p class="vida"></p>
+                    <!--Defesa--><p class="defesa"></p>
+                    <!--Força--><p class="força"></p>
+                </div>
+                <div>
+                    <h2>Historia</h2>
+                    <p class="historia"></p>
+                </div>
+                <div>
+                    <h2>Itens/Poderes</h2>
+                    <p class="itens"></p>
+                </div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
